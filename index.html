@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="utf-8" />
+    <title>Slepá mapa - nastavení</title>
+    <link href="game.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="setup-card">
+        <h1>Slepá mapa ČR</h1>
+        <form id="startForm">
+            <h2>Vyber skupiny</h2>
+            <label><input id="group-mesta" type="checkbox" name="groups" value="mesta"> Města</label>
+            <label><input id="group-pamatky" type="checkbox" name="groups" value="pamatky"> Památky (hrady/zámky)</label>
+            <label><input id="group-vodniPlochy" type="checkbox" name="groups" value="vodniPlochy"> Vodní plochy</label>
+            <label><input id="group-pohori" type="checkbox" name="groups" value="pohori"> Pohoří</label>
+
+            <h2>Obtížnost (velikost kruhu)</h2>
+            <label><input type="radio" name="difficulty" value="lehka"> Lehká (velký kruh)</label>
+            <label><input type="radio" name="difficulty" value="stredni"> Střední</label>
+            <label><input type="radio" name="difficulty" value="tezka"> Těžká (malý kruh)</label>
+
+            <button type="submit">Spustit hru</button>
+        </form>
+    </div>
+    <script src="game.js" defer></script>
+</body>
+</html>
